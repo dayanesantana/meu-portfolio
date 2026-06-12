@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dayane Santana">
+    
+    <meta 
+    name="description" 
+    content="Portfólio da Dayane Santana, desenvolvedora Full Stack especializada em criar experiências digitais envolventes e funcionais. Com um portfólio diversificado, com habilidades em front-end e back-end, utilizando tecnologias modernas para entregar soluções inovadoras. Conheça meus projetos e entre em contato.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
+
+    <title>Portfólio Dayane Santana</title>
+</head>
+<body>
+    <header>
+        <div class="menu-content">
+            <a href="index.html" id="titulo">Portfólio</a>
+
+            <nav>
+                <ul class="menu-list">
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+        </div>
+    </header>  
+
+    <main>
+        <section id="hero" class="section-container hero-container">
+            <article class="hero-content">
+
+                <span>Olá, eu sou a Dayane Santana!</span>
+                <h1>Desenvolvedora Full Stack</h1>
+                <p>Transformo ideias em cdigo e crio experiências digitais incríveis!</p>
+
+                <div class="buttons-container">
+                    <a href="#contact" class="botao">Entre em contato</a>
+                    <a href="#about" class="botao-outline">Saiba Mais</a>
+                </div>
+            </article>
+
+            <figure class="hero-image">
+                <img src="./assets/img/foto_dev_woman.svg" alt="Foto da autora." class="float-animation">
+            </figure>
+            
+        </section>
+
+        <section id="about" class="section-container about-container">
+
+            <figure class="about-image">
+                <img src="./assets/img/avatar_dev_woman.svg" alt="Foto do perfil">
+            </figure>
+
+            <article class="about-content">
+                <h2>Sobre Mim</h2>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, nobis mollitia doloribus possimus, voluptatum atque dolorum nulla nostrum nesciunt quod fugiat odit voluptas sed! Libero commodi fugiat assumenda facere alias!</p>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus possimus, saepe earum distinctio nobis ratione consequuntur asperiores dolore animi. Numquam magni iusto voluptates commodi officiis? Debitis ab quidem quos esse.</p>
+
+                <div class="about-buttons-data">
+                    <div class="buttons-container">
+                        <a href="#" target="_blank" class="botao">GitHub</a>
+                        <a href="#" target="_blank" class="botao-outline">Currículo</a>
+                    </div>
+
+                    <div class="data-container">
+                        <div class="data-item">
+                            <span class="data-number">100</span>
+                            <span class="data-label">Seguidores</span>
+                        </div>
+
+                        <div class="data-item">
+                            <span class="data-number">10</span>
+                            <span class="data-label">Repositórios</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+           
+        </section>
+
+        <section id="projects" class="section-container projects-container">
+            <h2>Meus Projetos</h2>
+
+            <div class="swioer projects-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+
+                        <article class="project-card">
+                            <figure class="project-image">
+                                <img src="./assets/icons/languages/github.svg" alt="Ícone GitHub">
+                            </figure>
+
+                            <div class="project-content">
+                                <h3>Projeto GitHub</h3>
+                                <p>Projeto desenvolvido no GitHub</p>
+
+                                <div class="project-tags">
+                                    <span class="tag">GitHub</span>
+                                </div>
+
+                                <div class="project-buttons">
+                                    <a href="#" target="_blank" class="botao botao-sm">GitHub</a>
+                                    <a href="#" target="_blank" class="botao-outline botao-sm">Deploy</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+          
+        </section>
+
+        <section id="contact" class="section-container contact-container">
+
+            <article class="contact-info">
+                <h2>Entre em contato</h2>
+                <p>Sinta-se a vontade para entrar em contato comigo!</p>
+
+                <div class="social-container">
+                    <a href="#" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <img src="./assets/icons/social/linkedin.svg" alt="Link para o LinkedIn">
+                    </a>
+
+                    <a href="#" target="_blank" class="social-icon" aria-label="GitHub">
+                        <img src="./assets/icons/social/github.svg" alt="Link para o GitHub">
+                    </a>
+
+                    <a href="#" target="_blank" class="social-icon" aria-label="Instagram">
+                        <img src="./assets/icons/social/instagram.svg" alt="Link para o Instagram">
+                    </a>
+                </div>
+            </article>
+
+            <form id="formulario">
+
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo">
+                <span id="erro-nome"></span>
+
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="Digite seu email">
+                <span id="erro-email"></span>
+
+                <label for="assunto">Assunto</label>
+                <input type="text" name="assunto" id="assunto" placeholder="Digite o assunto da mensagem">
+                <span id="erro-assunto"></span>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem"></textarea>
+                <span id="erro-mensagem"></span>
+
+                <button class="botao" type="submit">Enviar Mensagem</button>
+            </form>
+          
+        </section>
+
+    </main>
+
+    <footer>
+        Desenvolvido por Dayane Santana - 2026
+    </footer>
+</body>
+</html>
