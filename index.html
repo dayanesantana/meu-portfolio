@@ -65,68 +65,14 @@
         </section>
 
         <section id="about" class="section-container about-container">
-
-            <figure class="about-image">
-                <img src="./assets/img/avatar_dev_woman.svg" alt="Foto do perfil">
-            </figure>
-
-            <article class="about-content">
-                <h2>Sobre Mim</h2>
-
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, nobis mollitia doloribus possimus, voluptatum atque dolorum nulla nostrum nesciunt quod fugiat odit voluptas sed! Libero commodi fugiat assumenda facere alias!</p>
-
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus possimus, saepe earum distinctio nobis ratione consequuntur asperiores dolore animi. Numquam magni iusto voluptates commodi officiis? Debitis ab quidem quos esse.</p>
-
-                <div class="about-buttons-data">
-                    <div class="buttons-container">
-                        <a href="#" target="_blank" class="botao">GitHub</a>
-                        <a href="#" target="_blank" class="botao-outline">Currículo</a>
-                    </div>
-
-                    <div class="data-container">
-                        <div class="data-item">
-                            <span class="data-number">100</span>
-                            <span class="data-label">Seguidores</span>
-                        </div>
-
-                        <div class="data-item">
-                            <span class="data-number">10</span>
-                            <span class="data-label">Repositórios</span>
-                        </div>
-                    </div>
-                </div>
-            </article>
-           
+                 
         </section>
 
         <section id="projects" class="section-container projects-container">
             <h2>Meus Projetos</h2>
 
             <div class="swiper projects-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-
-                        <article class="project-card">
-                            <figure class="project-image">
-                                <img src="./assets/icons/languages/github.svg" alt="Ícone GitHub">
-                            </figure>
-
-                            <div class="project-content">
-                                <h3>Projeto GitHub</h3>
-                                <p>Projeto desenvolvido no GitHub</p>
-
-                                <div class="project-tags">
-                                    <span class="tag">GitHub</span>
-                                </div>
-
-                                <div class="project-buttons">
-                                    <a href="#" target="_blank" class="botao botao-sm">GitHub</a>
-                                    <a href="#" target="_blank" class="botao-outline botao-sm">Deploy</a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
+                <div class="swiper-wrapper"></div>
 
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -157,7 +103,9 @@
                 </div>
             </article>
 
-            <form id="formulario">
+            <form id="formulario" action="https://formsubmit.co/efbd7583fe93ba88ac6b9df064552114" method="POST">
+                <input type="hidden" name="_next" value="http://localhost:5500/sucess.html">
+                <input type="hidden" name="_captcha" value="false">
 
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo">
@@ -185,5 +133,9 @@
     <footer>
         Desenvolvido por Dayane Santana - 2026
     </footer>
+    
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
