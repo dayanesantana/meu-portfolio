@@ -15,24 +15,24 @@ async function getAboutGithub(){
         about.innerHTML = ''
 
         about.innerHTML = `
-        <figure class="about-image">
+        <figure class="about-image about-container">
         <img src="${perfil.avatar_url}" alt="Foto do perfil - ${perfil.name}">
         </figure>
         
-        <article class="about-image">
+        <article class="about-image about-content">
             <h2>Sobre Mim</h2>
             <p>
-                texto aqui
+                Sou desenvolvedora Full Stack com paixão genuína por desafios técnicos complexos — especialmente aqueles que envolvem integrar sistemas distintos em arquiteturas coesas e escaláveis. Acredito que código limpo é código que comunica intenção.
             </p>
 
             <p>
-                texto aqui
+                No back-end, meu stack principal é Java com Spring Boot. No front-end, construo interfaces com React e TypeScript que são funcionais, acessíveis e agradáveis de usar. Gosto de entender o problema antes de escrever a primeira linha.
             </p>
 
-           <div class="about-button-data">
+           <div class="about-buttons-data">
             <div class="buttons-container">
-                <a href="${perfil}.html_url" target="_blank" class="botao">Ver GitHub</a>
-                <a href="#" target="_blank" class="botao-outline">Currículo</a>
+                <a href="${perfil.html_url}" target="_blank" class="botao">GitHub</a>
+                <a href="https://drive.google.com/file/d/1pueIwQmNWxnKaEVxwL01eUOtwW5UlcBC/view?usp=drive_link" target="_blank" class="botao-outline button-data">Currículo</a>
             </div>
 
             <div class="data-container">
@@ -72,6 +72,7 @@ async function getProjectsGithub(){
             'HTML': 'html',
             'CSS': 'css',
             'GitHub': 'github',
+            'Bootstrap': 'bootstrap',
         }
 
         //formata o nome do repositório
@@ -112,7 +113,7 @@ async function getProjectsGithub(){
 
             swiperWrapper.innerHTML += `
                 <div class="swiper-slide">
-                    <article class="project-card">
+                    <article class="projects-card">
                         <div class="project-image">
                             <img src="${urlLogo}" 
                                 alt="Ícone ${linguagem}"
