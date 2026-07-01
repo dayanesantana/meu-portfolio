@@ -32,7 +32,7 @@ async function getAboutGithub(){
            <div class="about-buttons-data">
             <div class="buttons-container">
                 <a href="${perfil.html_url}" target="_blank" class="botao">GitHub</a>
-                <a href="https://drive.google.com/file/d/1pueIwQmNWxnKaEVxwL01eUOtwW5UlcBC/view?usp=drive_link" target="_blank" class="botao-outline button-data">Currículo</a>
+                <a href="https://drive.google.com/file/d/1CrRerF5Q_nxkokQGG5JGF7pO2coH4M85/view?usp=drive_link" target="_blank" class="botao-outline button-data">Currículo</a>
             </div>
 
             <div class="data-container">
@@ -50,7 +50,7 @@ async function getAboutGithub(){
         </article>`
 
     } catch(error){
-        console.error('Erro ao buscar dados no GutHub:', error)
+        console.error('Erro ao buscar dados no GitHub:', error)
     }
 }
 
@@ -61,6 +61,10 @@ async function getProjectsGithub(){
 
         const resposta = await fetch('https://api.github.com/users/dayanesantana/repos?sort=updated&per_page=6')
         const repositorios = await resposta.json()
+
+        const destaque = repositorios.filter(repo => 
+            repo.topics && repo.topics.includes('portfolio')
+        );
 
         swiperWrapper.innerHTML = ''
 

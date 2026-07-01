@@ -449,7 +449,7 @@ a#titulo.brand img {
   border-radius: var(--radius-lg);
   padding: 2.5rem 2rem;
   width: 300px;
-  height: 300px;
+  height: 320px;
   box-shadow: var(--shadow-lg);
 }
 
